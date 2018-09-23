@@ -1,0 +1,261 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+// Variables
+$font: 'Expletus Sans';
+$body-font: 'Open Sans Reg';
+$header-font: 'Abril Fatface', cursive;
+$link-font: 'Open Sans Bold';
+$white: #fff;
+$green: #385F42;
+$red: 	#B0314F;
+$gray: #D2D0D3;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*style*/
+
+html, body {
+  width: 100%;
+  min-height:100%;
+  margin: 0;
+}
+
+body {
+  background: url('/dist/images/IMG_3510.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: $body-font;
+}
+
+a {
+  font-family: $link-font;
+}
+
+h1, h2 {
+  font-family: $header-font;
+}
+.wrapper {
+  width:100%;
+  height:100%;
+  position:relative;
+  background: rgba(165, 201, 166, 0.6);
+}
+
+.top-header {
+  background-color: #385f42;
+  height: 80px;
+  > h1 {
+    color: $white;
+    padding: 20px;
+    font-size: 40px;
+  }
+}
+
+.tab, .tabcontent {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+.tab {
+  margin-top: 80px;
+}
+
+.tabcontent {
+  margin-top: 200px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden; 
+}
+
+.tabcontent.show{
+  opacity: 1;
+  visibility: visible;  
+}
+
+.tablinks {
+  display: inline-block;
+  vertical-align: top;
+  width: 180px;
+  font-size: 20px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #385f42;
+  margin: 5px 10px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  text-decoration: none;
+  &:hover {
+    color: #b13153;
+    background: $white;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.active {
+  color: #b13153;
+  background: $white;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+article {
+  width: 400px;
+  height: 600px;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  -webkit-box-shadow: 0px 13px 5px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 13px 5px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 13px 5px -11px rgba(0, 0, 0, 0.75);
+  background-color: $white;
+  position: relative;
+  > {
+    header {
+      position: absolute;
+      width: 100%;
+      height: 263px;
+      top: 0;
+      display: table;
+      vertical-align: middle;
+      text-align: center;
+      > h2 {
+        margin-top: 130px;
+        color: $white;
+        font-size: 30px;
+      }
+    }
+    img {
+      outline: 1px solid white;
+      outline-offset: -14px;
+    }
+    .fa {
+      position: absolute;
+      color: $white;
+      padding: 14px;
+      border-radius: 22px;
+      top: 240px;
+      left: 50%;
+      margin-left: -25px;
+      z-index: 99;
+    }
+    section {
+      position: absolute;
+      margin-top: -13px;
+      width: 100%;
+      background: $white;
+      z-index: 9;
+      > p {
+        font-size: 20px;
+        color: #385f42;
+        margin-top: 60px;
+        padding: 0px 25px 0px 25px;
+        text-align: justify;
+      }
+    }
+    footer {
+      position: absolute;
+      bottom: 0;
+      border-top: 1px solid darkgray;
+      width: 100%;
+      height: 60px;
+      > {
+        .article-read-link {
+          float: left;
+          color: $green;
+          text-decoration: none;
+          font-size: 20px;
+          padding: 17px;
+        }
+        .article-share-link {
+          float: right;
+          color: $gray;
+          text-decoration: none;
+          font-size: 20px;
+          padding: 17px;
+        }
+        .article-read-link2 {
+          float: left;
+          color: $red;
+          text-decoration: none;
+          font-size: 20px;
+          padding: 17px;
+        }
+      }
+    }
+  }
+}
+.ah-red {
+  background: rgba(176, 45, 84, 0.4);
+}
+.ah-green {
+   background: rgba(140, 200, 141, 0.1);
+}
+.fa-red {
+  background: $red;
+}
+.fa-green {
+  background: $green;
+}
+
