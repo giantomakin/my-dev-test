@@ -23,7 +23,7 @@ class Tab extends React.Component {
   
         <div className={this.state.activeTab === 1 ? 'tabcontent show' : 'tabcontent'}>
             <Article
-              image = "../images/IMG_3532.jpg"
+              image = "../dist/images/IMG_3532.jpg"
               headerClass = "article-header ah-green"
               title = "Go Hiking"
               iconClass = "fa fa-binoculars fa-green"
@@ -31,7 +31,7 @@ class Tab extends React.Component {
               readLinkClass = "article-read-link"
             />
             <Article
-              image="../images/IMG_3756.jpg"
+              image="../dist/images/IMG_3756.jpg"
               headerClass="article-header ah-green"
               title="Antiquing"
               iconClass="fa fa-key fa-green"
@@ -39,7 +39,7 @@ class Tab extends React.Component {
               readLinkClass="article-read-link"
             />
             <Article
-              image="../images/IMG_3629.jpg"
+              image="../dist/images/IMG_3629.jpg"
               headerClass="article-header ah-green"
               title="Local Farms"
               iconClass="fa fa-leaf fa-green"
@@ -51,7 +51,7 @@ class Tab extends React.Component {
 
         <div className="tabcontent" className={this.state.activeTab === 2 ? 'tabcontent show' : 'tabcontent'}>
             <Article
-              image="../images/IMG_3618.jpg"
+              image="../dist/images/IMG_3618.jpg"
               headerClass="article-header ah-red"
               title="Best Mexican"
               iconClass="fa fa-fire fa-red"
@@ -59,7 +59,7 @@ class Tab extends React.Component {
               readLinkClass="article-read-link2"
             />
             <Article
-              image="../images/IMG_3739.jpg"
+              image="../dist/images/IMG_3739.jpg"
               headerClass="article-header ah-red"
               title="We All Scream For Ice cream!"
               iconClass="fa fa-utensil-spoon fa-red"
@@ -67,7 +67,7 @@ class Tab extends React.Component {
               readLinkClass="article-read-link2"
             />
             <Article
-              image="../images/IMG_3390.jpg"
+              image="../dist/images/IMG_3390.jpg"
               headerClass="article-header ah-red"
               title="Great Ramen Places"
               iconClass="fa fa-heart fa-red"
